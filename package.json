@@ -3,21 +3,32 @@
   "version": "0.1.0",
   "description": "Pi package that manages a shared system theme alias based on macOS appearance or host sunrise/sunset",
   "type": "module",
-  "keywords": ["pi-package", "pi", "pi-coding-agent", "theme", "dark-mode", "sunrise", "sunset"],
+  "keywords": [
+    "pi-package",
+    "pi",
+    "pi-coding-agent",
+    "theme",
+    "dark-mode",
+    "sunrise",
+    "sunset"
+  ],
   "license": "MIT",
   "pi": {
-    "extensions": ["./src/index.ts"]
+    "extensions": [
+      "./src/index.ts"
+    ]
   },
   "scripts": {
     "check": "tsc --noEmit"
   },
   "peerDependencies": {
-    "@mariozechner/pi-coding-agent": "*"
+    "@earendil-works/pi-coding-agent": "*"
   },
   "dependencies": {
     "sunrise-sunset-js": "^3.2.0"
   },
   "devDependencies": {
+    "@earendil-works/pi-coding-agent": "^0.74.0",
     "typescript": "^5.9.3"
   }
 }
